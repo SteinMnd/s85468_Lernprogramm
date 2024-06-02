@@ -1,0 +1,45 @@
+{
+    "teil-internettechnologien": [
+      {
+        "text": ["Welche Authentifizierung bietet HTTP?"],
+        "options": ["Digest Access Authentication","OTP","OAuth","2-Faktor-Authentifizierung"]
+      },
+      {
+        "text": ["Welches Transportprotokoll eignet sich für zeitkritische Übertragungen?"],
+        "options": ["UDP","TCP","HTTP","Fast Retransmit"]
+      },
+      {
+        "text": ["Was ist die maximale Länge einer URL in HTTP GET-Anfragen?"],
+        "options": ["2048 Zeichen", "1024 Zeichen", "4096 Zeichen", "Keine Begrenzung"]
+      },
+      {
+        "text": ["Welches Protokoll wird für sichere Datenübertragungen im Internet verwendet?"],
+        "options": ["HTTPS", "HTTP", "FTP", "SMTP"]
+      },
+      {
+        "text": ["Was ist der Zweck von DNS?"],
+        "options": ["Domainnamen in IP-Adressen aufzulösen", "E-Mails zu senden", "Webseiten zu hosten", "Netzwerkverkehr zu verschlüsseln"]
+      },
+      {
+        "text": ["Was ist der Unterschied zwischen IPv4 und IPv6?"],
+        "options": ["IPv6 hat mehr verfügbare Adressen", "IPv6 ist langsamer", "IPv4 unterstützt nur statische IP-Adressen", "IPv4 ist sicherer"]
+      },
+      {
+        "text": ["Was ist ein CDN?"],
+        "options": ["Content Delivery Network", "Central Domain Name", "Content Distribution Node", "Common Data Network"]
+      },
+      {
+        "text": ["Welches Protokoll wird häufig für den Versand von E-Mails verwendet?"],
+        "options": ["SMTP", "FTP", "HTTP", "POP3"]
+      },
+      {
+        "text": ["Was bedeutet SSL/TLS?"],
+        "options": ["Secure Sockets Layer/Transport Layer Security", "Secure Sockets Link/Transmission Link Security", "Secure System Layer/Transport System Link", "Secure Sockets Layer/Transport Layer System"]
+      },
+      {
+        "text": ["Was ist der Zweck eines Load Balancers?"],
+        "options": ["Verteilung des Datenverkehrs auf mehrere Server", "Verschlüsselung von Daten", "Speichern von Daten", "Analysieren von Netzwerkverkehr"]
+      }
+    ]
+  }
+  

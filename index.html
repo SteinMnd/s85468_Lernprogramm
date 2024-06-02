@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbasiertes Lernprogramm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vexflow@4.2.2/build/cjs/vexflow.js"></script>
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <img src="Headeri.jpg" alt="Header-Bild">
+        <h1>Lernprogramm</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" id="home-btn">Home</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <p>Status: <span id="status">Online</span></p>
+    </aside>
+
+    <main>
+        <div id="aufgaben-auswahl">
+            <h2>Aufgabenkategorien</h2>
+            <ul>
+                <li><button class="category-btn" onclick="startLearning('math')">Mathe</button></li>
+                <li><button class="category-btn" onclick="startLearning('internet')">Internettechnologien</button></li>
+                <li><button class="category-btn" onclick="startLearning('general')">Allgemeinwissen</button></li>
+                <li><button class="category-btn" onclick="startLearning('notes')">Notenlernen</button></li>
+            </ul>
+        </div>
+    
+        <div id="aufgaben-container" style="display: none;">
+            <h2>Aufgabe</h2>
+            <p id="aufgaben-frage">Hier wird die Aufgabe angezeigt</p>
+            <div id="antworten"></div>
+            <div id="fortschritt-container">
+                <div id="fortschritt-bar" class="progress-bar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+    
+        <div id="popup-container" class="popup-container">
+            <div class="popup-content">
+                <h2>Glückwunsch!</h2>
+                <p>Du hast alle Fragen beantwortet.</p>
+                <button id="close-popup-btn">Schließen</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Lernprogramm - Sten Mende</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+
+            function updateOnlineStatus() {
+                const statusElement = document.getElementById('status');
+                if (navigator.onLine) {
+                    statusElement.textContent = 'Online';
+                    statusElement.style.color = 'green';
+                } else {
+                    statusElement.textContent = 'Offline';
+                    statusElement.style.color = 'red';
+                }
+            }
+
+            window.addEventListener('online', updateOnlineStatus);
+            window.addEventListener('offline', updateOnlineStatus);
+
+            updateOnlineStatus(); 
+        });
+    </script>
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registriert mit Scope: ', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Service Worker Registrierung fehlgeschlagen: ', error);
+                });
+        });
+        }
+  </script>
+</body>
+</html>

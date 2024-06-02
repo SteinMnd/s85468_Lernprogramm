@@ -1,0 +1,45 @@
+{
+    "teil-allgemein": [
+      {
+        "text": "Karl der Große, Geburtsjahr",
+        "options": ["747", "828", "650", "1150"]
+      },
+      {
+        "text": "Welches Element hat das chemische Symbol 'O'?",
+        "options": ["Sauerstoff", "Gold", "Silber", "Kohlenstoff"]
+      },
+      {
+        "text": "Wie viele Planeten hat unser Sonnensystem?",
+        "options": ["8", "7", "9", "10"]
+      },
+      {
+        "text": "Wer schrieb 'Die Verwandlung'?",
+        "options": ["Franz Kafka", "Johann Wolfgang von Goethe", "Friedrich Schiller", "Hermann Hesse"]
+      },
+      {
+        "text": "Was ist die Hauptstadt von Frankreich?",
+        "options": ["Paris", "London", "Berlin", "Madrid"]
+      },
+      {
+        "text": "In welchem Jahr fiel die Berliner Mauer?",
+        "options": ["1989", "1990", "1987", "1991"]
+      },
+      {
+        "text": "Wer malte die 'Mona Lisa'?",
+        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"]
+      },
+      {
+        "text": "Wie heißt der längste Fluss der Welt?",
+        "options": ["Nil", "Amazonas", "Mississippi", "Donau"]
+      },
+      {
+        "text": "Wer entwickelte die Relativitätstheorie?",
+        "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Niels Bohr"]
+      },
+      {
+        "text": "Wie viele Bundesländer hat Deutschland?",
+        "options": ["16", "15", "14", "17"]
+      }
+    ]
+  }
+  
